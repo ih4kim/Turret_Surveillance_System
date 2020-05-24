@@ -1,0 +1,97 @@
+The system is: Windows - 10.0.17763 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/bin/Hostx64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.26.28805 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.26.28805.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "C:/opt/Turret_Surveillance_System/build/CMakeFiles/3.17.2/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/bin/Hostx64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.26.28805 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.26.28805.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/opt/Turret_Surveillance_System/build/CMakeFiles/3.17.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/opt/Turret_Surveillance_System/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_df46d\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_df46d.dir\build.make /nologo -L                  CMakeFiles\cmTC_df46d.dir\build
+Building C object CMakeFiles/cmTC_df46d.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @C:\Users\BILLYK~1\AppData\Local\Temp\nm585D.tmp
+testCCompiler.c
+Linking C executable cmTC_df46d.exe
+	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_df46d.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_df46d.dir\objects1.rsp @C:\Users\BILLYK~1\AppData\Local\Temp\nm59D5.tmp
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/opt/Turret_Surveillance_System/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_c3844\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_c3844.dir\build.make /nologo -L                  CMakeFiles\cmTC_c3844.dir\build
+Building C object CMakeFiles/cmTC_c3844.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @C:\Users\BILLYK~1\AppData\Local\Temp\nm5BE7.tmp
+CMakeCCompilerABI.c
+Linking C executable cmTC_c3844.exe
+	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_c3844.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_c3844.dir\objects1.rsp @C:\Users\BILLYK~1\AppData\Local\Temp\nm5C37.tmp
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/opt/Turret_Surveillance_System/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_2f8ef\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_2f8ef.dir\build.make /nologo -L                  CMakeFiles\cmTC_2f8ef.dir\build
+Building CXX object CMakeFiles/cmTC_2f8ef.dir/testCXXCompiler.cxx.obj
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @C:\Users\BILLYK~1\AppData\Local\Temp\nm5D8D.tmp
+testCXXCompiler.cxx
+Linking CXX executable cmTC_2f8ef.exe
+	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_2f8ef.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_2f8ef.dir\objects1.rsp @C:\Users\BILLYK~1\AppData\Local\Temp\nm5DFC.tmp
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/opt/Turret_Surveillance_System/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_4ecb2\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_4ecb2.dir\build.make /nologo -L                  CMakeFiles\cmTC_4ecb2.dir\build
+Building CXX object CMakeFiles/cmTC_4ecb2.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @C:\Users\BILLYK~1\AppData\Local\Temp\nm5F62.tmp
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_4ecb2.exe
+	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_4ecb2.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_4ecb2.dir\objects1.rsp @C:\Users\BILLYK~1\AppData\Local\Temp\nm5FB1.tmp
+
+
+

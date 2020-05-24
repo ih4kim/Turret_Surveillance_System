@@ -1,0 +1,8 @@
+prefix=C:/opt/Turret_Surveillance_System/install
+
+Name: testing
+Description: Description of testing
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
