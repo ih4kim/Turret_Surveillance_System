@@ -19,3 +19,9 @@ After downloading the repo, remember to source the setup by running:
 ```
 cmd /k devel\setup.bat
 ```
+
+# OpenCV in Ros
+
+Add OpenCV such that ROS can detect where the libraries are.
+1. Download OpenCV https://opencv.org/releases/page/3/
+2. Move the opencv folder to your C: drive
