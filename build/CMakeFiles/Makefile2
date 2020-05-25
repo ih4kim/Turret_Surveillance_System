@@ -59,11 +59,13 @@ CMAKE_BINARY_DIR = C:\opt\Turret_Surveillance_System\build
 # The main recursive "all" target.
 all: CMakeFiles\Project__setup_util.py_exec_install_python.dir\all
 all: testing\all
+all: motion_detection\all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: testing\preinstall
+preinstall: motion_detection\preinstall
 
 .PHONY : preinstall
 
@@ -75,8 +77,37 @@ clean: CMakeFiles\Project__setup_util.py_exec_install_python.dir\clean
 clean: CMakeFiles\clean_test_results.dir\clean
 clean: CMakeFiles\doxygen.dir\clean
 clean: testing\clean
+clean: motion_detection\clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory motion_detection
+
+# Recursive "all" directory target.
+motion_detection\all: motion_detection\CMakeFiles\motion_detection_node.dir\all
+
+.PHONY : motion_detection\all
+
+# Recursive "preinstall" directory target.
+motion_detection\preinstall:
+
+.PHONY : motion_detection\preinstall
+
+# Recursive "clean" directory target.
+motion_detection\clean: motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\clean
+motion_detection\clean: motion_detection\CMakeFiles\motion_detection_node.dir\clean
+
+.PHONY : motion_detection\clean
 
 #=============================================================================
 # Directory level rules for directory testing
@@ -469,7 +500,7 @@ testing\CMakeFiles\rosgraph_msgs_generate_messages_cpp.dir\clean:
 testing\CMakeFiles\talker.dir\all:
 	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\talker.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\talker.dir\depend
 	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\talker.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\talker.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num=3,4 "Built target talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num=5,6 "Built target talker"
 .PHONY : testing\CMakeFiles\talker.dir\all
 
 # Build rule for subdir invocation for target.
@@ -704,6 +735,303 @@ std_msgs_generate_messages_py: testing\CMakeFiles\std_msgs_generate_messages_py.
 testing\CMakeFiles\std_msgs_generate_messages_py.dir\clean:
 	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\std_msgs_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_py.dir\clean
 .PHONY : testing\CMakeFiles\std_msgs_generate_messages_py.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# clean rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\clean
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_cpp.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# clean rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\clean
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_cpp.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/sensor_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# clean rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\clean
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_eus.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# clean rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\clean
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_lisp.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# clean rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\clean
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_nodejs.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/sensor_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# clean rule for target.
+motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\clean
+.PHONY : motion_detection\CMakeFiles\sensor_msgs_generate_messages_py.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# clean rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\clean
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_eus.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\clean
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_lisp.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# clean rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\clean
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_nodejs.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/geometry_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# clean rule for target.
+motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\clean
+.PHONY : motion_detection\CMakeFiles\geometry_msgs_generate_messages_py.dir\clean
+
+#=============================================================================
+# Target rules for target motion_detection/CMakeFiles/motion_detection_node.dir
+
+# All Build rule for target.
+motion_detection\CMakeFiles\motion_detection_node.dir\all:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\motion_detection_node.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\motion_detection_node.dir\depend
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\motion_detection_node.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\motion_detection_node.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num=3,4 "Built target motion_detection_node"
+.PHONY : motion_detection\CMakeFiles\motion_detection_node.dir\all
+
+# Build rule for subdir invocation for target.
+motion_detection\CMakeFiles\motion_detection_node.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\motion_detection_node.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\opt\Turret_Surveillance_System\build\CMakeFiles 0
+.PHONY : motion_detection\CMakeFiles\motion_detection_node.dir\rule
+
+# Convenience name for target.
+motion_detection_node: motion_detection\CMakeFiles\motion_detection_node.dir\rule
+
+.PHONY : motion_detection_node
+
+# clean rule for target.
+motion_detection\CMakeFiles\motion_detection_node.dir\clean:
+	$(MAKE) $(MAKESILENT) -f motion_detection\CMakeFiles\motion_detection_node.dir\build.make /nologo -$(MAKEFLAGS) motion_detection\CMakeFiles\motion_detection_node.dir\clean
+.PHONY : motion_detection\CMakeFiles\motion_detection_node.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

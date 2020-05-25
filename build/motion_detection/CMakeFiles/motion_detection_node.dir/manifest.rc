@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/opt/Turret_Surveillance_System/build/motion_detection/CMakeFiles/motion_detection_node.dir/embed.manifest"

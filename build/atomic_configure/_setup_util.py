@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = 'C:/opt/Turret_Surveillance_System/devel;C:/opt/ros/melodic/x64;C:/opt/rosdeps/x64;C:/opt/vcpkg/installed/x64-windows'.split(';')
+            CMAKE_PREFIX_PATH = 'C:/opt/ros/melodic/x64;C:/opt/rosdeps/x64;C:/opt/vcpkg/installed/x64-windows'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

@@ -1,2 +1,2 @@
-testing
+motion_detection;testing
 -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=C:\opt\Turret_Surveillance_System\devel -DCMAKE_INSTALL_PREFIX=C:\opt\Turret_Surveillance_System\install -G NMake Makefiles

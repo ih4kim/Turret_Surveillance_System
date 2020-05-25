@@ -245,6 +245,9 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=LSB_RELEASE_EXECUTABLE-NOTFOUND
 //Path to a program.
 NOSETESTS:FILEPATH=C:/opt/python27amd64/Scripts/nosetests-2.7.exe
 
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=C:/opt/rosdeps/x64/CMake
+
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=C:/opt/python27amd64/python.exe
 
@@ -281,14 +284,38 @@ _gtest_SOURCES:FILEPATH=_gtest_SOURCES-NOTFOUND
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=C:/opt/ros/melodic/x64/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=C:/opt/ros/melodic/x64/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=C:/opt/ros/melodic/x64/share/cpp_common/cmake
 
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=C:/opt/ros/melodic/x64/share/cv_bridge/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=C:/opt/ros/melodic/x64/share/geometry_msgs/cmake
+
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=C:/opt/ros/melodic/x64/share/image_transport/cmake
+
 //Path to a library.
-lib:FILEPATH=C:/opt/ros/melodic/x64/lib/xmlrpcpp.lib
+lib:FILEPATH=C:/opt/ros/melodic/x64/lib/rospack.lib
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=C:/opt/ros/melodic/x64/share/message_filters/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=C:/opt/ros/melodic/x64/share/message_runtime/cmake
+
+//Value Computed by CMake
+motion_detection_BINARY_DIR:STATIC=C:/opt/Turret_Surveillance_System/build/motion_detection
+
+//Value Computed by CMake
+motion_detection_SOURCE_DIR:STATIC=C:/opt/Turret_Surveillance_System/src/motion_detection
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=C:/opt/ros/melodic/x64/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=C:/opt/ros/melodic/x64/share/rosconsole/cmake
@@ -305,11 +332,20 @@ roscpp_traits_DIR:PATH=C:/opt/ros/melodic/x64/share/roscpp_traits/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=C:/opt/ros/melodic/x64/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=C:/opt/ros/melodic/x64/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=C:/opt/ros/melodic/x64/share/rospack/cmake
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=C:/opt/ros/melodic/x64/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=C:/opt/ros/melodic/x64/share/rostime/cmake
+
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=C:/opt/ros/melodic/x64/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=C:/opt/ros/melodic/x64/share/std_msgs/cmake
@@ -421,7 +457,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER
@@ -465,6 +501,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[C:/opt/rosdeps/x64][v3.4.1()]
 //Details about finding PY_em
 FIND_PACKAGE_MESSAGE_DETAILS_PY_em:INTERNAL=[C:\opt\python27amd64\lib\site-packages\em.pyc][v()]
 //Details about finding PythonInterp
