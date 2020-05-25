@@ -19,6 +19,12 @@ opencv2/imgproc/imgproc.hpp
 -
 opencv2/highgui/highgui.hpp
 -
+queue
+-
+iostream
+-
+opencv2/imgproc/types_c.h
+-
 
 C:/opt/ros/melodic/x64/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

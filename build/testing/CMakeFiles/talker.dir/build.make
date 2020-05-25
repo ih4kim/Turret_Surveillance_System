@@ -65,7 +65,7 @@ testing\CMakeFiles\talker.dir\src\talker.cpp.obj: testing\CMakeFiles\talker.dir\
 testing\CMakeFiles\talker.dir\src\talker.cpp.obj: C:\opt\Turret_Surveillance_System\src\testing\src\talker.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object testing/CMakeFiles/talker.dir/src/talker.cpp.obj"
 	cd C:\opt\Turret_Surveillance_System\build\testing
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @<<
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\talker.dir\src\talker.cpp.obj /FdCMakeFiles\talker.dir\ /FS -c C:\opt\Turret_Surveillance_System\src\testing\src\talker.cpp
 <<
 	cd C:\opt\Turret_Surveillance_System\build
@@ -73,7 +73,7 @@ testing\CMakeFiles\talker.dir\src\talker.cpp.obj: C:\opt\Turret_Surveillance_Sys
 testing\CMakeFiles\talker.dir\src\talker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/talker.dir/src/talker.cpp.i"
 	cd C:\opt\Turret_Surveillance_System\build\testing
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe > CMakeFiles\talker.dir\src\talker.cpp.i @<<
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe > CMakeFiles\talker.dir\src\talker.cpp.i @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\opt\Turret_Surveillance_System\src\testing\src\talker.cpp
 <<
 	cd C:\opt\Turret_Surveillance_System\build
@@ -81,7 +81,7 @@ testing\CMakeFiles\talker.dir\src\talker.cpp.i: cmake_force
 testing\CMakeFiles\talker.dir\src\talker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/talker.cpp.s"
 	cd C:\opt\Turret_Surveillance_System\build\testing
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @<<
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\talker.dir\src\talker.cpp.s /c C:\opt\Turret_Surveillance_System\src\testing\src\talker.cpp
 <<
 	cd C:\opt\Turret_Surveillance_System\build
@@ -115,7 +115,7 @@ C:\opt\Turret_Surveillance_System\devel\lib\testing\talker.exe: C:\opt\rosdeps\x
 C:\opt\Turret_Surveillance_System\devel\lib\testing\talker.exe: testing\CMakeFiles\talker.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable C:\opt\Turret_Surveillance_System\devel\lib\testing\talker.exe"
 	cd C:\opt\Turret_Surveillance_System\build\testing
-	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\talker.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\talker.dir\objects1.rsp @<<
+	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\talker.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\talker.dir\objects1.rsp @<<
  /out:C:\opt\Turret_Surveillance_System\devel\lib\testing\talker.exe /implib:C:\opt\Turret_Surveillance_System\devel\lib\talker.lib /pdb:C:\opt\Turret_Surveillance_System\devel\lib\testing\talker.pdb /version:0.0  /machine:x64 /debug /INCREMENTAL /subsystem:console  C:\opt\ros\melodic\x64\lib\roscpp.lib C:\opt\rosdeps\x64\lib\boost_filesystem-vc141-mt-x64-1_66.lib C:\opt\ros\melodic\x64\lib\rosconsole.lib C:\opt\ros\melodic\x64\lib\rosconsole_log4cxx.lib C:\opt\ros\melodic\x64\lib\rosconsole_backend_interface.lib C:\opt\rosdeps\x64\lib\log4cxx.lib C:\opt\rosdeps\x64\lib\boost_regex-vc141-mt-x64-1_66.lib C:\opt\ros\melodic\x64\lib\xmlrpcpp.lib C:\opt\ros\melodic\x64\lib\roscpp_serialization.lib C:\opt\ros\melodic\x64\lib\rostime.lib C:\opt\ros\melodic\x64\lib\cpp_common.lib C:\opt\rosdeps\x64\lib\boost_system-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\boost_thread-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\boost_chrono-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\boost_date_time-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\boost_atomic-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\console_bridge.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 	cd C:\opt\Turret_Surveillance_System\build

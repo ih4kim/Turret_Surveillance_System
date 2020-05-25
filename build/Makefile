@@ -840,8 +840,8 @@ help:
 	@echo ... std_msgs_generate_messages_py
 	@echo ... tests
 	@echo ... Project__setup_util.py_exec_install_python
+	@echo ... main_gui
 	@echo ... motion_detection_node
-	@echo ... talker
 	@echo ... catkin_generated/add_python_executable/Project__setup_util.py_exec_install_python/_setup_util.obj
 	@echo ... catkin_generated/add_python_executable/Project__setup_util.py_exec_install_python/_setup_util.i
 	@echo ... catkin_generated/add_python_executable/Project__setup_util.py_exec_install_python/_setup_util.s

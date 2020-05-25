@@ -65,7 +65,7 @@ motion_detection\CMakeFiles\motion_detection_node.dir\src\motion_detection_node.
 motion_detection\CMakeFiles\motion_detection_node.dir\src\motion_detection_node.cpp.obj: C:\opt\Turret_Surveillance_System\src\motion_detection\src\motion_detection_node.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object motion_detection/CMakeFiles/motion_detection_node.dir/src/motion_detection_node.cpp.obj"
 	cd C:\opt\Turret_Surveillance_System\build\motion_detection
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @<<
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\motion_detection_node.dir\src\motion_detection_node.cpp.obj /FdCMakeFiles\motion_detection_node.dir\ /FS -c C:\opt\Turret_Surveillance_System\src\motion_detection\src\motion_detection_node.cpp
 <<
 	cd C:\opt\Turret_Surveillance_System\build
@@ -73,7 +73,7 @@ motion_detection\CMakeFiles\motion_detection_node.dir\src\motion_detection_node.
 motion_detection\CMakeFiles\motion_detection_node.dir\src\motion_detection_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motion_detection_node.dir/src/motion_detection_node.cpp.i"
 	cd C:\opt\Turret_Surveillance_System\build\motion_detection
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe > CMakeFiles\motion_detection_node.dir\src\motion_detection_node.cpp.i @<<
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe > CMakeFiles\motion_detection_node.dir\src\motion_detection_node.cpp.i @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\opt\Turret_Surveillance_System\src\motion_detection\src\motion_detection_node.cpp
 <<
 	cd C:\opt\Turret_Surveillance_System\build
@@ -81,7 +81,7 @@ motion_detection\CMakeFiles\motion_detection_node.dir\src\motion_detection_node.
 motion_detection\CMakeFiles\motion_detection_node.dir\src\motion_detection_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motion_detection_node.dir/src/motion_detection_node.cpp.s"
 	cd C:\opt\Turret_Surveillance_System\build\motion_detection
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @<<
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\motion_detection_node.dir\src\motion_detection_node.cpp.s /c C:\opt\Turret_Surveillance_System\src\motion_detection\src\motion_detection_node.cpp
 <<
 	cd C:\opt\Turret_Surveillance_System\build
@@ -145,7 +145,7 @@ C:\opt\Turret_Surveillance_System\devel\lib\motion_detection\motion_detection_no
 C:\opt\Turret_Surveillance_System\devel\lib\motion_detection\motion_detection_node.exe: motion_detection\CMakeFiles\motion_detection_node.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\opt\Turret_Surveillance_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable C:\opt\Turret_Surveillance_System\devel\lib\motion_detection\motion_detection_node.exe"
 	cd C:\opt\Turret_Surveillance_System\build\motion_detection
-	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\motion_detection_node.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\motion_detection_node.dir\objects1.rsp @<<
+	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\motion_detection_node.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\motion_detection_node.dir\objects1.rsp @<<
  /out:C:\opt\Turret_Surveillance_System\devel\lib\motion_detection\motion_detection_node.exe /implib:C:\opt\Turret_Surveillance_System\devel\lib\motion_detection_node.lib /pdb:C:\opt\Turret_Surveillance_System\devel\lib\motion_detection\motion_detection_node.pdb /version:0.0  /machine:x64 /debug /INCREMENTAL /subsystem:console  C:\opt\ros\melodic\x64\lib\cv_bridge.lib C:\opt\rosdeps\x64\lib\opencv_core341.lib C:\opt\rosdeps\x64\lib\opencv_imgproc341.lib C:\opt\rosdeps\x64\lib\opencv_imgcodecs341.lib C:\opt\ros\melodic\x64\lib\image_transport.lib C:\opt\ros\melodic\x64\lib\message_filters.lib C:\opt\ros\melodic\x64\lib\class_loader.lib C:\opt\rosdeps\x64\lib\PocoFoundation.lib C:\opt\ros\melodic\x64\lib\roslib.lib C:\opt\ros\melodic\x64\lib\rospack.lib C:\opt\python27amd64\libs\python27.lib C:\opt\rosdeps\x64\lib\boost_program_options-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\tinyxml2.lib C:\opt\ros\melodic\x64\lib\roscpp.lib C:\opt\rosdeps\x64\lib\boost_filesystem-vc141-mt-x64-1_66.lib C:\opt\ros\melodic\x64\lib\rosconsole.lib C:\opt\ros\melodic\x64\lib\rosconsole_log4cxx.lib C:\opt\ros\melodic\x64\lib\rosconsole_backend_interface.lib C:\opt\rosdeps\x64\lib\log4cxx.lib C:\opt\rosdeps\x64\lib\boost_regex-vc141-mt-x64-1_66.lib C:\opt\ros\melodic\x64\lib\xmlrpcpp.lib C:\opt\ros\melodic\x64\lib\roscpp_serialization.lib C:\opt\ros\melodic\x64\lib\rostime.lib C:\opt\ros\melodic\x64\lib\cpp_common.lib C:\opt\rosdeps\x64\lib\boost_system-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\boost_thread-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\boost_chrono-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\boost_date_time-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\boost_atomic-vc141-mt-x64-1_66.lib C:\opt\rosdeps\x64\lib\console_bridge.lib C:\opt\rosdeps\x64\lib\opencv_dnn341.lib C:\opt\rosdeps\x64\lib\opencv_ml341.lib C:\opt\rosdeps\x64\lib\opencv_objdetect341.lib C:\opt\rosdeps\x64\lib\opencv_shape341.lib C:\opt\rosdeps\x64\lib\opencv_stitching341.lib C:\opt\rosdeps\x64\lib\opencv_superres341.lib C:\opt\rosdeps\x64\lib\opencv_videostab341.lib C:\opt\rosdeps\x64\lib\opencv_calib3d341.lib C:\opt\rosdeps\x64\lib\opencv_features2d341.lib C:\opt\rosdeps\x64\lib\opencv_flann341.lib C:\opt\rosdeps\x64\lib\opencv_highgui341.lib C:\opt\rosdeps\x64\lib\opencv_photo341.lib C:\opt\rosdeps\x64\lib\opencv_video341.lib C:\opt\rosdeps\x64\lib\opencv_videoio341.lib C:\opt\rosdeps\x64\lib\opencv_imgcodecs341.lib C:\opt\rosdeps\x64\lib\opencv_imgproc341.lib C:\opt\rosdeps\x64\lib\opencv_core341.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 	cd C:\opt\Turret_Surveillance_System\build
