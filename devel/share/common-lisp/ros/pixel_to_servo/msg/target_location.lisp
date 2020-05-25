@@ -10,12 +10,12 @@
   ((xpos
     :reader xpos
     :initarg :xpos
-    :type cl:fixnum
+    :type cl:integer
     :initform 0)
    (ypos
     :reader ypos
     :initarg :ypos
-    :type cl:fixnum
+    :type cl:integer
     :initform 0)
    (shoot
     :reader shoot
@@ -48,13 +48,25 @@
   (shoot m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <target_location>) ostream)
   "Serializes a message object of type '<target_location>"
-  (cl:let* ((signed (cl:slot-value msg 'xpos)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 65536) signed)))
+  (cl:let* ((signed (cl:slot-value msg 'xpos)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 18446744073709551616) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) unsigned) ostream)
     )
-  (cl:let* ((signed (cl:slot-value msg 'ypos)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 65536) signed)))
+  (cl:let* ((signed (cl:slot-value msg 'ypos)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 18446744073709551616) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) unsigned) ostream)
     )
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'shoot) 1 0)) ostream)
 )
@@ -63,11 +75,23 @@
     (cl:let ((unsigned 0))
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:slot-value msg 'xpos) (cl:if (cl:< unsigned 32768) unsigned (cl:- unsigned 65536))))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'xpos) (cl:if (cl:< unsigned 9223372036854775808) unsigned (cl:- unsigned 18446744073709551616))))
     (cl:let ((unsigned 0))
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:slot-value msg 'ypos) (cl:if (cl:< unsigned 32768) unsigned (cl:- unsigned 65536))))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'ypos) (cl:if (cl:< unsigned 9223372036854775808) unsigned (cl:- unsigned 18446744073709551616))))
     (cl:setf (cl:slot-value msg 'shoot) (cl:not (cl:zerop (cl:read-byte istream))))
   msg
 )
@@ -79,20 +103,20 @@
   "pixel_to_servo/target_location")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<target_location>)))
   "Returns md5sum for a message object of type '<target_location>"
-  "9e8342ea7a7513f78942cdcd6ccc5b17")
+  "7c6d9597e9887f51e118b0aa12a96938")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'target_location)))
   "Returns md5sum for a message object of type 'target_location"
-  "9e8342ea7a7513f78942cdcd6ccc5b17")
+  "7c6d9597e9887f51e118b0aa12a96938")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<target_location>)))
   "Returns full string definition for message of type '<target_location>"
-  (cl:format cl:nil "int16 xpos~%int16 ypos~%bool shoot~%~%~%"))
+  (cl:format cl:nil "int64 xpos~%int64 ypos~%bool shoot~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'target_location)))
   "Returns full string definition for message of type 'target_location"
-  (cl:format cl:nil "int16 xpos~%int16 ypos~%bool shoot~%~%~%"))
+  (cl:format cl:nil "int64 xpos~%int64 ypos~%bool shoot~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <target_location>))
   (cl:+ 0
-     2
-     2
+     8
+     8
      1
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <target_location>))

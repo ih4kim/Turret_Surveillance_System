@@ -37,10 +37,10 @@ struct target_location_
 
 
 
-   typedef int16_t _xpos_type;
+   typedef int64_t _xpos_type;
   _xpos_type xpos;
 
-   typedef int16_t _ypos_type;
+   typedef int64_t _ypos_type;
   _ypos_type ypos;
 
    typedef uint8_t _shoot_type;
@@ -134,12 +134,12 @@ struct MD5Sum< ::pixel_to_servo::target_location_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "9e8342ea7a7513f78942cdcd6ccc5b17";
+    return "7c6d9597e9887f51e118b0aa12a96938";
   }
 
   static const char* value(const ::pixel_to_servo::target_location_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x9e8342ea7a7513f7ULL;
-  static const uint64_t static_value2 = 0x8942cdcd6ccc5b17ULL;
+  static const uint64_t static_value1 = 0x7c6d9597e9887f51ULL;
+  static const uint64_t static_value2 = 0xe118b0aa12a96938ULL;
 };
 
 template<class ContainerAllocator>
@@ -158,8 +158,8 @@ struct Definition< ::pixel_to_servo::target_location_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int16 xpos\n"
-"int16 ypos\n"
+    return "int64 xpos\n"
+"int64 ypos\n"
 "bool shoot\n"
 ;
   }
@@ -201,9 +201,9 @@ struct Printer< ::pixel_to_servo::target_location_<ContainerAllocator> >
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::pixel_to_servo::target_location_<ContainerAllocator>& v)
   {
     s << indent << "xpos: ";
-    Printer<int16_t>::stream(s, indent + "  ", v.xpos);
+    Printer<int64_t>::stream(s, indent + "  ", v.xpos);
     s << indent << "ypos: ";
-    Printer<int16_t>::stream(s, indent + "  ", v.ypos);
+    Printer<int64_t>::stream(s, indent + "  ", v.ypos);
     s << indent << "shoot: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.shoot);
   }

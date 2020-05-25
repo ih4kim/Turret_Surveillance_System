@@ -1,2 +1,2 @@
-motion_detection;pixel_to_servo;testing
+gui_packagee;motion_detection;pixel_to_servo
 -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=C:\opt\Turret_Surveillance_System\devel -DCMAKE_INSTALL_PREFIX=C:\opt\Turret_Surveillance_System\install -G NMake Makefiles

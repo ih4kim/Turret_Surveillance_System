@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
   std_msgs
+  pixel_to_servo
 )
 
 ## System dependencies are found with CMake's conventions
@@ -113,6 +114,7 @@ catkin_package(
    roscpp 
    sensor_msgs 
    std_msgs
+   pixel_to_servo
 #  DEPENDS system_lib
 )
 
@@ -150,7 +152,7 @@ add_executable(motion_detection_node src/motion_detection_node.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-#ndencies(motion_detection_node motion_detection_generate_messages_cpp)
+add_dependencies(motion_detection_node motion_detection_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(motion_detection_node

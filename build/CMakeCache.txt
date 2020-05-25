@@ -344,6 +344,9 @@ motion_detection_SOURCE_DIR:STATIC=C:/opt/Turret_Surveillance_System/src/motion_
 //Value Computed by CMake
 pixel_to_servo_BINARY_DIR:STATIC=C:/opt/Turret_Surveillance_System/build/pixel_to_servo
 
+//The directory containing a CMake configuration file for pixel_to_servo.
+pixel_to_servo_DIR:PATH=C:/opt/Turret_Surveillance_System/devel/share/pixel_to_servo/cmake
+
 //Value Computed by CMake
 pixel_to_servo_SOURCE_DIR:STATIC=C:/opt/Turret_Surveillance_System/src/pixel_to_servo
 

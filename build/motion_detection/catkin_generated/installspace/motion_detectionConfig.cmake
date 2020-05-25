@@ -185,7 +185,7 @@ foreach(t ${motion_detection_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "cv_bridge;image_transport;roscpp;sensor_msgs;std_msgs")
+set(depends "cv_bridge;image_transport;roscpp;sensor_msgs;std_msgs;pixel_to_servo")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

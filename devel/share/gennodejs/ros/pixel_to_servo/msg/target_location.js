@@ -47,9 +47,9 @@ class target_location {
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type target_location
     // Serialize message field [xpos]
-    bufferOffset = _serializer.int16(obj.xpos, buffer, bufferOffset);
+    bufferOffset = _serializer.int64(obj.xpos, buffer, bufferOffset);
     // Serialize message field [ypos]
-    bufferOffset = _serializer.int16(obj.ypos, buffer, bufferOffset);
+    bufferOffset = _serializer.int64(obj.ypos, buffer, bufferOffset);
     // Serialize message field [shoot]
     bufferOffset = _serializer.bool(obj.shoot, buffer, bufferOffset);
     return bufferOffset;
@@ -60,16 +60,16 @@ class target_location {
     let len;
     let data = new target_location(null);
     // Deserialize message field [xpos]
-    data.xpos = _deserializer.int16(buffer, bufferOffset);
+    data.xpos = _deserializer.int64(buffer, bufferOffset);
     // Deserialize message field [ypos]
-    data.ypos = _deserializer.int16(buffer, bufferOffset);
+    data.ypos = _deserializer.int64(buffer, bufferOffset);
     // Deserialize message field [shoot]
     data.shoot = _deserializer.bool(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 5;
+    return 17;
   }
 
   static datatype() {
@@ -79,14 +79,14 @@ class target_location {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '9e8342ea7a7513f78942cdcd6ccc5b17';
+    return '7c6d9597e9887f51e118b0aa12a96938';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    int16 xpos
-    int16 ypos
+    int64 xpos
+    int64 ypos
     bool shoot
     
     `;

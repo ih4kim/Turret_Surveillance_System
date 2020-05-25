@@ -23,6 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "C:/opt/Turret_Surveillance_System/src/motion_detection/include"
+  "C:/opt/Turret_Surveillance_System/devel/include"
   "C:/opt/ros/melodic/x64/include"
   "C:/opt/ros/melodic/x64/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "C:/opt/rosdeps/x64/include/boost-1_66"

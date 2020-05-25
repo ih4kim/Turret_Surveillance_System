@@ -5,4 +5,4 @@ Description: Description of motion_detection
 Version: 0.0.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs
+Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs pixel_to_servo
