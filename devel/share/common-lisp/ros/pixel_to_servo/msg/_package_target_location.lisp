@@ -3,4 +3,6 @@
           XPOS
           YPOS-VAL
           YPOS
+          SHOOT-VAL
+          SHOOT
 ))

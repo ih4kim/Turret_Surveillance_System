@@ -20,6 +20,7 @@ class target_location {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.xpos = null;
       this.ypos = null;
+      this.shoot = null;
     }
     else {
       if (initObj.hasOwnProperty('xpos')) {
@@ -34,6 +35,12 @@ class target_location {
       else {
         this.ypos = 0;
       }
+      if (initObj.hasOwnProperty('shoot')) {
+        this.shoot = initObj.shoot
+      }
+      else {
+        this.shoot = false;
+      }
     }
   }
 
@@ -43,6 +50,8 @@ class target_location {
     bufferOffset = _serializer.int16(obj.xpos, buffer, bufferOffset);
     // Serialize message field [ypos]
     bufferOffset = _serializer.int16(obj.ypos, buffer, bufferOffset);
+    // Serialize message field [shoot]
+    bufferOffset = _serializer.bool(obj.shoot, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -54,11 +63,13 @@ class target_location {
     data.xpos = _deserializer.int16(buffer, bufferOffset);
     // Deserialize message field [ypos]
     data.ypos = _deserializer.int16(buffer, bufferOffset);
+    // Deserialize message field [shoot]
+    data.shoot = _deserializer.bool(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 4;
+    return 5;
   }
 
   static datatype() {
@@ -68,7 +79,7 @@ class target_location {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'd6ba7dc735dee2eb6828c1c2a7ece7d0';
+    return '9e8342ea7a7513f78942cdcd6ccc5b17';
   }
 
   static messageDefinition() {
@@ -76,6 +87,7 @@ class target_location {
     return `
     int16 xpos
     int16 ypos
+    bool shoot
     
     `;
   }
@@ -98,6 +110,13 @@ class target_location {
     }
     else {
       resolved.ypos = 0
+    }
+
+    if (msg.shoot !== undefined) {
+      resolved.shoot = msg.shoot;
+    }
+    else {
+      resolved.shoot = false
     }
 
     return resolved;

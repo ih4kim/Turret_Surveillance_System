@@ -25,11 +25,13 @@ struct target_location_
 
   target_location_()
     : xpos(0)
-    , ypos(0)  {
+    , ypos(0)
+    , shoot(false)  {
     }
   target_location_(const ContainerAllocator& _alloc)
     : xpos(0)
-    , ypos(0)  {
+    , ypos(0)
+    , shoot(false)  {
   (void)_alloc;
     }
 
@@ -40,6 +42,9 @@ struct target_location_
 
    typedef int16_t _ypos_type;
   _ypos_type ypos;
+
+   typedef uint8_t _shoot_type;
+  _shoot_type shoot;
 
 
 
@@ -71,7 +76,8 @@ template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::pixel_to_servo::target_location_<ContainerAllocator1> & lhs, const ::pixel_to_servo::target_location_<ContainerAllocator2> & rhs)
 {
   return lhs.xpos == rhs.xpos &&
-    lhs.ypos == rhs.ypos;
+    lhs.ypos == rhs.ypos &&
+    lhs.shoot == rhs.shoot;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -128,12 +134,12 @@ struct MD5Sum< ::pixel_to_servo::target_location_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "d6ba7dc735dee2eb6828c1c2a7ece7d0";
+    return "9e8342ea7a7513f78942cdcd6ccc5b17";
   }
 
   static const char* value(const ::pixel_to_servo::target_location_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xd6ba7dc735dee2ebULL;
-  static const uint64_t static_value2 = 0x6828c1c2a7ece7d0ULL;
+  static const uint64_t static_value1 = 0x9e8342ea7a7513f7ULL;
+  static const uint64_t static_value2 = 0x8942cdcd6ccc5b17ULL;
 };
 
 template<class ContainerAllocator>
@@ -154,6 +160,7 @@ struct Definition< ::pixel_to_servo::target_location_<ContainerAllocator> >
   {
     return "int16 xpos\n"
 "int16 ypos\n"
+"bool shoot\n"
 ;
   }
 
@@ -174,6 +181,7 @@ namespace serialization
     {
       stream.next(m.xpos);
       stream.next(m.ypos);
+      stream.next(m.shoot);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -196,6 +204,8 @@ struct Printer< ::pixel_to_servo::target_location_<ContainerAllocator> >
     Printer<int16_t>::stream(s, indent + "  ", v.xpos);
     s << indent << "ypos: ";
     Printer<int16_t>::stream(s, indent + "  ", v.ypos);
+    s << indent << "shoot: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.shoot);
   }
 };
 
