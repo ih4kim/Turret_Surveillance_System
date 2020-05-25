@@ -107,6 +107,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("C:/opt/Turret_Surveillance_System/build/pixel_to_servo/cmake_install.cmake")
   include("C:/opt/Turret_Surveillance_System/build/testing/cmake_install.cmake")
   include("C:/opt/Turret_Surveillance_System/build/motion_detection/cmake_install.cmake")
 

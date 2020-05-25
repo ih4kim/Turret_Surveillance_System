@@ -1,0 +1,8 @@
+prefix=C:/opt/Turret_Surveillance_System/devel
+
+Name: pixel_to_servo
+Description: Description of pixel_to_servo
+Version: 0.0.0
+Cflags: -IC:/opt/Turret_Surveillance_System/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs message_runtime

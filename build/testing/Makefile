@@ -60,6 +60,28 @@ CMAKE_BINARY_DIR = C:\opt\Turret_Surveillance_System\build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache\fast: rebuild_cache
+
+.PHONY : rebuild_cache\fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\ctest.exe --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test\fast: test
+
+.PHONY : test\fast
+
 # Special rule for the target install/local
 install\local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -84,17 +106,6 @@ install\fast: preinstall\fast
 	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install\fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\ctest.exe --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test\fast: test
-
-.PHONY : test\fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -105,17 +116,6 @@ edit_cache:
 edit_cache\fast: edit_cache
 
 .PHONY : edit_cache\fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\opt\python27amd64\Lib\site-packages\cmake\data\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache\fast: rebuild_cache
-
-.PHONY : rebuild_cache\fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -170,139 +170,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-testing\CMakeFiles\roscpp_generate_messages_cpp.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_cpp.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\roscpp_generate_messages_cpp.dir\rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: testing\CMakeFiles\roscpp_generate_messages_cpp.dir\rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\roscpp_generate_messages_cpp.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_cpp.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : roscpp_generate_messages_cpp\fast
-
-# Convenience name for target.
-testing\CMakeFiles\roscpp_generate_messages_eus.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_eus.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\roscpp_generate_messages_eus.dir\rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: testing\CMakeFiles\roscpp_generate_messages_eus.dir\rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\roscpp_generate_messages_eus.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_eus.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : roscpp_generate_messages_eus\fast
-
-# Convenience name for target.
-testing\CMakeFiles\roscpp_generate_messages_lisp.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_lisp.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\roscpp_generate_messages_lisp.dir\rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: testing\CMakeFiles\roscpp_generate_messages_lisp.dir\rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\roscpp_generate_messages_lisp.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_lisp.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : roscpp_generate_messages_lisp\fast
-
-# Convenience name for target.
-testing\CMakeFiles\rosgraph_msgs_generate_messages_eus.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_eus.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\rosgraph_msgs_generate_messages_eus.dir\rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: testing\CMakeFiles\rosgraph_msgs_generate_messages_eus.dir\rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\rosgraph_msgs_generate_messages_eus.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_eus.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : rosgraph_msgs_generate_messages_eus\fast
-
-# Convenience name for target.
-testing\CMakeFiles\roscpp_generate_messages_py.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_py.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\roscpp_generate_messages_py.dir\rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: testing\CMakeFiles\roscpp_generate_messages_py.dir\rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\roscpp_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_py.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : roscpp_generate_messages_py\fast
-
-# Convenience name for target.
-testing\CMakeFiles\roscpp_generate_messages_nodejs.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_nodejs.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\roscpp_generate_messages_nodejs.dir\rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: testing\CMakeFiles\roscpp_generate_messages_nodejs.dir\rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\roscpp_generate_messages_nodejs.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\roscpp_generate_messages_nodejs.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : roscpp_generate_messages_nodejs\fast
-
-# Convenience name for target.
-testing\CMakeFiles\rosgraph_msgs_generate_messages_cpp.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_cpp.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\rosgraph_msgs_generate_messages_cpp.dir\rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: testing\CMakeFiles\rosgraph_msgs_generate_messages_cpp.dir\rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\rosgraph_msgs_generate_messages_cpp.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_cpp.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : rosgraph_msgs_generate_messages_cpp\fast
-
-# Convenience name for target.
 testing\CMakeFiles\talker.dir\rule:
 	cd C:\opt\Turret_Surveillance_System\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\talker.dir\rule
@@ -320,158 +187,6 @@ talker\fast:
 	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\talker.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\talker.dir\build
 	cd C:\opt\Turret_Surveillance_System\build\testing
 .PHONY : talker\fast
-
-# Convenience name for target.
-testing\CMakeFiles\rosgraph_msgs_generate_messages_lisp.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_lisp.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\rosgraph_msgs_generate_messages_lisp.dir\rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: testing\CMakeFiles\rosgraph_msgs_generate_messages_lisp.dir\rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\rosgraph_msgs_generate_messages_lisp.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_lisp.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : rosgraph_msgs_generate_messages_lisp\fast
-
-# Convenience name for target.
-testing\CMakeFiles\rosgraph_msgs_generate_messages_nodejs.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_nodejs.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\rosgraph_msgs_generate_messages_nodejs.dir\rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: testing\CMakeFiles\rosgraph_msgs_generate_messages_nodejs.dir\rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\rosgraph_msgs_generate_messages_nodejs.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_nodejs.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : rosgraph_msgs_generate_messages_nodejs\fast
-
-# Convenience name for target.
-testing\CMakeFiles\rosgraph_msgs_generate_messages_py.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_py.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\rosgraph_msgs_generate_messages_py.dir\rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: testing\CMakeFiles\rosgraph_msgs_generate_messages_py.dir\rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\rosgraph_msgs_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\rosgraph_msgs_generate_messages_py.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : rosgraph_msgs_generate_messages_py\fast
-
-# Convenience name for target.
-testing\CMakeFiles\std_msgs_generate_messages_cpp.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_cpp.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\std_msgs_generate_messages_cpp.dir\rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: testing\CMakeFiles\std_msgs_generate_messages_cpp.dir\rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\std_msgs_generate_messages_cpp.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_cpp.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : std_msgs_generate_messages_cpp\fast
-
-# Convenience name for target.
-testing\CMakeFiles\std_msgs_generate_messages_eus.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_eus.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\std_msgs_generate_messages_eus.dir\rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: testing\CMakeFiles\std_msgs_generate_messages_eus.dir\rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\std_msgs_generate_messages_eus.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_eus.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : std_msgs_generate_messages_eus\fast
-
-# Convenience name for target.
-testing\CMakeFiles\std_msgs_generate_messages_lisp.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_lisp.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\std_msgs_generate_messages_lisp.dir\rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: testing\CMakeFiles\std_msgs_generate_messages_lisp.dir\rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\std_msgs_generate_messages_lisp.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_lisp.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : std_msgs_generate_messages_lisp\fast
-
-# Convenience name for target.
-testing\CMakeFiles\std_msgs_generate_messages_nodejs.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_nodejs.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\std_msgs_generate_messages_nodejs.dir\rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: testing\CMakeFiles\std_msgs_generate_messages_nodejs.dir\rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\std_msgs_generate_messages_nodejs.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_nodejs.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : std_msgs_generate_messages_nodejs\fast
-
-# Convenience name for target.
-testing\CMakeFiles\std_msgs_generate_messages_py.dir\rule:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_py.dir\rule
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : testing\CMakeFiles\std_msgs_generate_messages_py.dir\rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: testing\CMakeFiles\std_msgs_generate_messages_py.dir\rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py\fast:
-	cd C:\opt\Turret_Surveillance_System\build
-	$(MAKE) $(MAKESILENT) -f testing\CMakeFiles\std_msgs_generate_messages_py.dir\build.make /nologo -$(MAKEFLAGS) testing\CMakeFiles\std_msgs_generate_messages_py.dir\build
-	cd C:\opt\Turret_Surveillance_System\build\testing
-.PHONY : std_msgs_generate_messages_py\fast
 
 src\talker.obj: src\talker.cpp.obj
 
@@ -518,21 +233,6 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... roscpp_generate_messages_cpp
-	@echo ... roscpp_generate_messages_eus
-	@echo ... roscpp_generate_messages_lisp
-	@echo ... roscpp_generate_messages_nodejs
-	@echo ... roscpp_generate_messages_py
-	@echo ... rosgraph_msgs_generate_messages_cpp
-	@echo ... rosgraph_msgs_generate_messages_eus
-	@echo ... rosgraph_msgs_generate_messages_lisp
-	@echo ... rosgraph_msgs_generate_messages_nodejs
-	@echo ... rosgraph_msgs_generate_messages_py
-	@echo ... std_msgs_generate_messages_cpp
-	@echo ... std_msgs_generate_messages_eus
-	@echo ... std_msgs_generate_messages_lisp
-	@echo ... std_msgs_generate_messages_nodejs
-	@echo ... std_msgs_generate_messages_py
 	@echo ... talker
 	@echo ... src/talker.obj
 	@echo ... src/talker.i
