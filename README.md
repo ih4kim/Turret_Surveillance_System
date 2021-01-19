@@ -27,6 +27,6 @@ Add OpenCV such that ROS can detect where the libraries are.
 2. Move the opencv folder to your C: drive
 
 
-#A Very Messy Demo of the Turret Surveillence System
+# A Very Messy Demo of the Turret Surveillence System
 
 ![Demo of turret system](https://github.com/ih4kim/Turret_Surveillance_System/blob/master/ezgif.com-gif-maker.gif)
