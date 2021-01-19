@@ -25,3 +25,5 @@ cmd /k devel\setup.bat
 Add OpenCV such that ROS can detect where the libraries are.
 1. Download OpenCV 3.4.2 https://opencv.org/releases/page/3/
 2. Move the opencv folder to your C: drive
+
+![Alt Text](https://github.com/ih4kim/Turret_Surveillance_System/blob/master/ezgif.com-gif-maker.gif)
